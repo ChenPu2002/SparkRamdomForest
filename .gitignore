@@ -1,0 +1,27 @@
+# Ignore Scala and SBT specific files
+target/
+project/target/
+project/project/
+*.log
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
+.idea/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+*.swp
+*.bak
+*.tmp
+*.lock
+*.cache
+*.history
+*.class
+*.scala~
+*.sbt~
+*.tmp~
+*.log~
