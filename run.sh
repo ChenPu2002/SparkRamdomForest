@@ -4,7 +4,7 @@ docker run -d \
   -p 7077:7077 \
   -p 8080:8080 \
   --network spark-network \
-  -v /home/ubuntu/data:/data \
+  -v /home/peter/data:/data \
   -e SPARK_MODE=master \
   bitnami/spark:latest
 
@@ -13,12 +13,12 @@ docker run -d \
   -h spark-worker \
   -p 8081:8081 \
   --network spark-network \
-  -v /home/ubuntu/data:/data \
+  -v /home/peter/data:/data \
   -e SPARK_MODE=worker \
   -e SPARK_MASTER_URL=spark://spark-master:7077 \
   bitnami/spark:latest
   
-cd ~/spark_project && \
+cd /home/peter/spark_project && \
 
 docker run -it --rm \
   -v $(pwd):/app \
